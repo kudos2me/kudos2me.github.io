@@ -76,7 +76,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name">Isha Hartono</span>
+                        <span class="name"><!--Isha Hartono--></span>
                         <hr class="star-light">
                         <span class="skills">Front End Developer - Interaction Designer - Information Architect</span>
                     </div>
@@ -125,7 +125,7 @@
 
             <div class="row" id="container">
                 <div class="col-sm-4 portfolio-item element fed sp" data-category="fed">
-                    <a href="https://dl.dropboxusercontent.com/u/308118/remote.html" class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
+                    <a href="remote/ee.html" class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -135,7 +135,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item element ia ixd sp" data-category="ixd">
-                    <a href="https://dl.dropboxusercontent.com/u/308118/portfolio-remote/ee.html" class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
+                    <a href="remote/omg.html" class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -206,11 +206,11 @@
                 <div class="col-lg-4">
                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <!--div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
                         <i class="fa fa-download"></i> Download Theme
                     </a>
-                </div>
+                </div-->
             </div>
 
             <div class="row">
@@ -604,6 +604,10 @@
 			});
 		});		
 		
+        // clear remote modal cache 
+        $('body').on('hidden.bs.modal', '.modal', function () {
+          $(this).removeData('bs.modal');
+        });
 	});
 	</script>
 
