@@ -1,20 +1,72 @@
 <!DOCTYPE html>
-<!-- saved from url=(0068)http://tutsme-webdesign.info/tutorials/modals/update/remote_v31.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-  <title>Remote file for Bootstrap Modal</title>  
+  <title>Isha Hartono, UX/Front End Designer - London Borough of Camden</title>  
 </head>
 <body>
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                 <h4 class="modal-title">Old Mutual Group</h4>
-            </div>			<!-- /modal-header -->
-            <div class="modal-body">
-            <p>Excitavit hic ardor milites per municipia plurima, quae isdem conterminant, dispositos et castella, sed quisque serpentes latius pro viribus repellere moliens, nunc globis confertos, aliquotiens et dispersos multitudine superabatur ingenti.</p>
-            </div>			<!-- /modal-body -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>			<!-- /modal-footer -->
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                    <div class="row">
 
+                            <div class="modal-body">
+                                <div class="col-lg-12">
+                                    <h2>Old Mutual Group Corporate Intranet</h2>
+                                    <hr class="star-primary"/>
+                                </div>
+                                <div class="col-lg-5">
+                                    <img src="img/portfolio/omg/omgIntra1.png" class="img-responsive img-centered" alt=""/>
+                                    <img src="img/portfolio/omg/omgIntra2.png" class="img-responsive img-centered" alt=""/>
+                                </div>
+
+                                <div class="col-lg-7">
+
+                                    <p>This project was to redevelop an existing SharePoint 2010 publishing site for <a href="http://www.oldmutual.com/">Old Mutual Group</a>'s intranet. One of the primary goals of this project was to speed up client-side performance by:</p>
+                                    
+                                    <ul>
+                                        <li>Redesigning the master page and page layout</li>
+                                        <li>Refactoring main.css and overriding core.css</li>
+                                        <li>Basic image optimization and css "spriting" techniques</li>
+                                    </ul>
+                                    
+                                    <p>Using <a href="http://blog.drisgill.com/2009/11/starter-master-pages-for-sharepoint.html">Randy Drisgill's minimal master page</a> as a starting point, a lightweight master page containing all global elements (i.e. header, left navigation, content area, and footer) was created. It was a liquid-layout created using divs (elminating out-of-the-box table based layouts) and hid any unused SharePoint controls.</p>
+                                    <p>The original build had 9 page layouts. I consolidated these down to 4 - homepage, section overview, content, content aside.</p>
+                                    <p>Core.css was also unneccessarily duplicated with custom selectors appended making multiple calls to the server. My approach to branding SharePoint sites is to create a custom stylesheet and incorporate any ms-labelled selectors to override core.css styles affecting my own look and feel.</p>
+                                    <p>Basic techniques like optimising PNG images and spriting them ensures that a call to the server only needs to be made once and that file size has been reduced to a minimum. Scaling images down shaved off 150kb per image.</p>
+                                </div>
+                            </div>
+
+                            <br class="clear"/>
+                            
+                            <div class="modal-footer">
+                                <div class="col-lg-12">
+                                    <ul class="list-inline item-details">
+                                        <li>Client:
+                                            <strong><a href="http://www.oldmutual.com/">Old Mutual Group</a>
+                                            </strong>
+                                        </li>
+                                        <li>Project:
+                                            <strong>Corporate intranet</strong>
+                                        </li>
+                                        <li>Date:
+                                            <strong>December 2011 - April 2012 
+                                            </strong>
+                                        </li>
+                                        <li>Service:
+                                            <strong>Front-End Development 
+                                            </strong>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body></html>
