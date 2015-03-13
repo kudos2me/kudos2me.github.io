@@ -412,6 +412,10 @@
 			itemSelector: '.element',
 			layoutMode: 'fitRows'
 		});
+        // layout Isotope again after all images have loaded 
+        $container.imagesLoaded( function() {
+            $container.isotope('layout');
+        });
 		// filter items on 'a' link click 
 		$('#filters').on('click','a', function() {
 			var filterValue = $(this).attr('data-filter');
@@ -433,7 +437,6 @@
           $(this).removeData('bs.modal');
         });
 
-        $(window).resize();
 	});
 	</script>
 
