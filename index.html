@@ -405,7 +405,8 @@
 	<script src="js/isotope.pkgd.min.js"></script>
 	
 	<script> 
-	$(function() {
+    $(window).load(function() {
+//	$(function() {
 		// init Isotope 
 		var $container = $('#container').isotope({
 			// options
@@ -413,9 +414,10 @@
 			layoutMode: 'fitRows'
 		});
         // layout Isotope again after all images have loaded 
-        $container.imagesLoaded( function() {
+        /*$container.imagesLoaded( function() {
             $container.isotope('layout');
         });
+*/
 		// filter items on 'a' link click 
 		$('#filters').on('click','a', function() {
 			var filterValue = $(this).attr('data-filter');
