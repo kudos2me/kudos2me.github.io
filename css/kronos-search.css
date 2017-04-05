@@ -128,3 +128,8 @@
 }
 
 
+.stats-board {
+background:red;
+width:100%; 
+float:left;
+}
